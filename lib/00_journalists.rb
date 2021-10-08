@@ -19,7 +19,8 @@ def handle_commence_par_majuscule(bigdata)
 end
 
 def tri_ordre_alphabétique(bigdata)
-  bigdata_alpha = bigdata.sort
+  bigdata_min = bigdata.map(&:downcase)
+  bigdata_alpha = bigdata_min.sort
   puts bigdata_alpha
 end
 
